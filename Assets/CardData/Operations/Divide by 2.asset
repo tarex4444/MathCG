@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: Divide by 2
   m_EditorClassIdentifier: 
   cardName: Divide 2
-  cardType: 3
+  cardType: 0
+  cardSubtype: 3
   cardSprite: {fileID: 0}
   value: 2
   energyCost: 1
+  cardEffect: Divide by 2

@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25745bfc66864984b860dea70fde0242, type: 3}
-  m_Name: MathMark
+  m_Name: Add 5
   m_EditorClassIdentifier: 
-  cardName: MathMark
-  cardType: 5
+  cardName: Add5
+  cardType: 0
+  cardSubtype: 0
   cardSprite: {fileID: 0}
-  value: 2
-  energyCost: 2
+  value: 5
+  energyCost: 1
+  cardEffect: Add 5

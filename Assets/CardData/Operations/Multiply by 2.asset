@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25745bfc66864984b860dea70fde0242, type: 3}
-  m_Name: Add 5
+  m_Name: Multiply by 2
   m_EditorClassIdentifier: 
-  cardName: Add5
+  cardName: Multiply 2
   cardType: 0
+  cardSubtype: 2
   cardSprite: {fileID: 0}
-  value: 5
+  value: 2
   energyCost: 1
+  cardEffect: Multiply by 2

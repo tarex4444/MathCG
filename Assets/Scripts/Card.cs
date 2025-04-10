@@ -7,11 +7,14 @@ namespace MainGameNamespace
     {
         public string cardName;
         public CardType cardType;
+        public CardSubtype cardSubtype;
         public Sprite cardSprite;
         public int value;
         public int energyCost;
+        public string cardEffect;
 
-        public enum CardType { Add, Substract, Multiply, Divide, Power, Mark, Effect}
+        public enum CardType {Operation, Mark, Effect}
+        public enum CardSubtype {Add, Substract, Multiply, Divide, Power, Mark, Effect}
     }
 }
 

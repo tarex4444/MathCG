@@ -10,10 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 25745bfc66864984b860dea70fde0242, type: 3}
-  m_Name: Power of 2
+  m_Name: MathMark
   m_EditorClassIdentifier: 
-  cardName: Power of 2
-  cardType: 4
+  cardName: MathMark
+  cardType: 1
+  cardSubtype: 5
   cardSprite: {fileID: 0}
   value: 2
-  energyCost: 1
+  energyCost: 2
+  cardEffect: Mark target for 2 turns

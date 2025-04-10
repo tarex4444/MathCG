@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public OptionsManager OptionsManager {get; private set;}
     public AudioManager AudioManager {get; private set;}
     public DeckManager DeckManager {get; private set;}
+    public MapManager MapManager {get; private set;}
 
     private void Awake(){
         if(Instance == null){
@@ -27,6 +28,7 @@ public class GameManager : MonoBehaviour
         OptionsManager = GetComponentInChildren<OptionsManager>();
         AudioManager =GetComponentInChildren<AudioManager>();
         DeckManager = GetComponentInChildren<DeckManager>();
+        MapManager = GetComponentInChildren<MapManager>();
 
         if(OptionsManager==null){
             GameObject prefab = Resources.Load<GameObject>("Prefabs/OptionsManager");
@@ -53,6 +55,15 @@ public class GameManager : MonoBehaviour
             } else {
                 Instantiate(prefab, transform.position, Quaternion.identity, transform);
                 DeckManager = GetComponentInChildren<DeckManager>();
+            }
+        }
+        if(MapManager==null){
+            GameObject prefab = Resources.Load<GameObject>("Prefabs/MapManager");
+            if(prefab == null){
+                Debug.Log($"MapManager prefab not found");
+            } else {
+                Instantiate(prefab, transform.position, Quaternion.identity, transform);
+                MapManager = GetComponentInChildren<MapManager>();
             }
         }
     }

@@ -8,7 +8,6 @@ namespace MainGameNamespace
         public string cardName;
         public CardType cardType;
         public CardSubtype cardSubtype;
-        public Sprite cardSprite;
         public int value;
         public int energyCost;
         public string cardEffect;

@@ -376,7 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardData: {fileID: 11400000, guid: 764792be40b9e82458bbcf64c4c6b722, type: 2}
-  effectImage: {fileID: 197494986778432113}
+  effectImage: {fileID: 7963139542721635948}
   typeImage: {fileID: 6159383302097706383}
   effectText: {fileID: 283797376874463313}
   typeName: {fileID: 2617855056428615156}
@@ -389,6 +389,8 @@ MonoBehaviour:
   - {fileID: -638443171332479689, guid: 1eea4bffb4a291e49b8137acc14df91f, type: 3}
   - {fileID: -7377819553374844296, guid: 1eea4bffb4a291e49b8137acc14df91f, type: 3}
   - {fileID: -4789670105439411607, guid: 1eea4bffb4a291e49b8137acc14df91f, type: 3}
+  - {fileID: 1230287296, guid: 1eea4bffb4a291e49b8137acc14df91f, type: 3}
+  - {fileID: -1804523474, guid: 1eea4bffb4a291e49b8137acc14df91f, type: 3}
 --- !u!61 &8203306990072810712
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -448,10 +450,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectScale: 1.1
-  cardPlay: {x: 0, y: 400}
-  playPosition: {x: 0, y: 0, z: 0}
   glowEffect: {fileID: 2604628471315248303}
   playArrow: {fileID: 4542214976314568975}
+  lerpFactor: 0.5
 --- !u!1 &2448663611093277622
 GameObject:
   m_ObjectHideFlags: 0

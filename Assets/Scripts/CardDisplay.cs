@@ -37,20 +37,28 @@ public class CardDisplay : MonoBehaviour
             }
         }
         switch(cardData.cardSubtype.ToString()){
-            case "Addition":{
+            case "Add":{
                 effectImage.sprite = effectSpriteList[0];
                 break;
             }
-            case "Substraction":{
+            case "Substract":{
                 effectImage.sprite = effectSpriteList[1];
                 break;
             }
-            case "Multiplication":{
+            case "Multiply":{
                 effectImage.sprite = effectSpriteList[2];
                 break;
             }
-            case "Division":{
+            case "Divide":{
                 effectImage.sprite = effectSpriteList[3];
+                break;
+            }
+            case "Power":{
+                effectImage.sprite = effectSpriteList[4];
+                break;
+            }
+            case "Mark":{
+                effectImage.sprite = effectSpriteList[5];
                 break;
             }
         }

@@ -9,13 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25745bfc66864984b860dea70fde0242, type: 3}
-  m_Name: MathMark
+  m_Script: {fileID: 11500000, guid: 3b718f930bdcf3742b7fbbbfba14c7f5, type: 3}
+  m_Name: Stefan
   m_EditorClassIdentifier: 
-  cardName: MathMark
-  cardType: 1
-  cardSubtype: 5
-  cardSprite: {fileID: 0}
-  value: 2
-  energyCost: 2
-  cardEffect: Mark target with Summation for 2 turns
+  monsterName: Stefan
+  monsterHealth: 100
+  shielded: 0
+  monsterSprite: {fileID: -717227409207347299, guid: d2d2220ecfbe0cf4a98f27909c2eae7d, type: 3}

@@ -16,7 +16,6 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     private Vector3 originalPosition;
     [SerializeField] private float selectScale = 1.1f;
     [SerializeField] private GameObject glowEffect;
-    [SerializeField] private GameObject playArrow;
     [SerializeField] private float lerpFactor = 0.5f;
 
     void Awake()
@@ -56,7 +55,6 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
         currentState = 0;
         resetPosition();
         glowEffect.SetActive(false);
-        playArrow.SetActive(false);
     }
     
 

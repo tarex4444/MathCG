@@ -18,6 +18,12 @@ public class DeckManagerEditor : Editor
                 deckManager.DrawCard(handManager);
             }
         }
+        if (GUILayout.Button("Discard Card")){
+            HandManager handManager = FindAnyObjectByType<HandManager>();
+            if (handManager != null){
+                deckManager.DiscardCard(handManager);
+            }
+        }
     }
 }
 #endif

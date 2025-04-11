@@ -145,9 +145,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 46, y: -9}
+        - {x: 46, y: 31}
+        - {x: 32, y: 46}
+        - {x: -31, y: 46}
+        - {x: -46, y: 36}
+        - {x: -46, y: -13}
+        - {x: -14, y: -46}
+        - {x: 23, y: -46}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 46fdc06f40c3f3240800000000000000
       internalID: 4773600122041589604
@@ -167,9 +175,18 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 46, y: -27}
+        - {x: 46, y: 13}
+        - {x: 44, y: 16}
+        - {x: 9, y: 40}
+        - {x: -29, y: 40}
+        - {x: -46, y: 27}
+        - {x: -46, y: -15}
+        - {x: -14, y: -37}
+        - {x: 35, y: -37}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 962e9f57a6ca78db0800000000000000
       internalID: -4789670105439411607
@@ -189,9 +206,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 50, y: -28}
+        - {x: 50, y: 43}
+        - {x: 24, y: 50}
+        - {x: -36, y: 50}
+        - {x: -50, y: 43}
+        - {x: -50, y: -50}
+        - {x: 34, y: -50}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 28b7e35c74f800260800000000000000
       internalID: 7061801754131594114
@@ -211,9 +235,13 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 46, y: 45}
+        - {x: -45, y: 45}
+        - {x: -45, y: -45}
+        - {x: 46, y: -45}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 87a4920a438bc9990800000000000000
       internalID: -7377819553374844296
@@ -233,9 +261,18 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 42, y: -12}
+        - {x: 46, y: -9}
+        - {x: 45, y: 6}
+        - {x: 41, y: 8}
+        - {x: 29, y: 12}
+        - {x: -46, y: 12}
+        - {x: -46, y: -14}
+        - {x: -34, y: -16}
+        - {x: 14, y: -16}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 735247b715bc327f0800000000000000
       internalID: -638443171332479689
@@ -255,9 +292,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 53, y: -25}
+        - {x: 53, y: 21}
+        - {x: 41, y: 29}
+        - {x: -53, y: 29}
+        - {x: -53, y: -38}
+        - {x: 44, y: -38}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: c967250506d6cd660800000000000000
       internalID: 7411919347176863388
@@ -277,12 +320,65 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
-      outline: []
+      outline:
+      - - {x: 50.5, y: -35}
+        - {x: 50.5, y: 27}
+        - {x: 20.5, y: 38}
+        - {x: -31.5, y: 38}
+        - {x: -44.5, y: 19}
+        - {x: -50.5, y: 8}
+        - {x: -50.5, y: -34}
+        - {x: -35.5, y: -38}
+        - {x: 45.5, y: -38}
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
       spriteID: 556f3dce3ea4ce580800000000000000
       internalID: -8796573629370075563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SummationMark
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 581
+        width: 92
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5316122, y: 0.53161156}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7de42c052573acb4db1a38716dfe8297
+      internalID: -1804523474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PowerSprite
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 566
+        width: 92
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d3b246f07163046bd757a395cd24b2
+      internalID: 1230287296
       vertices: []
       indices: 
       edges: []
@@ -307,8 +403,10 @@ TextureImporter:
       MarkTypeSprite: -8796573629370075563
       MultiplicationSprite: -7377819553374844296
       OperationTypeSprite: 7411919347176863388
+      PowerSprite: 1230287296
       Sprites_5: -1428572451713796752
       SubstracitonSprite: -638443171332479689
+      SummationMark: -1804523474
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

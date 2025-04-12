@@ -1,5 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
+using MainGameNamespace;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -14,14 +16,22 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     private int currentState = 0;
     private Quaternion originalRotation;
     private Vector3 originalPosition;
+    private CardDisplay card;
+    private Camera mainCamera;
+    private MonsterGridManager gridManager;
+    private HandManager handManager;
     [SerializeField] private float selectScale = 1.1f;
     [SerializeField] private GameObject glowEffect;
     [SerializeField] private float lerpFactor = 0.5f;
+
+
 
     void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
         canvas = GetComponentInParent<Canvas>();
+        card = GetComponent<CardDisplay>();
+        mainCamera = Camera.main;
         setPosition();
     }
 
@@ -42,9 +52,6 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
             }
             case 3:{
                 HandlePlayState();
-                if(!Input.GetMouseButton(0)){
-                    TransitionToState0();
-                }
                 break;
             }
 
@@ -66,11 +73,34 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
     }
     private void HandleDragedState()
     {
+        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+        worldPosition.z = 0;
+        RaycastHit2D hit = Physics2D.Raycast(worldPosition, Vector2.zero);
+        if(hit.collider != null && hit.collider.CompareTag("Monster")){
+            MonsterDisplay monster = hit.collider.GetComponent<MonsterDisplay>();
+            if(monster != null){
+                monster.ApplyCardEffect(card.cardData);
+
+            }
+        }
         rectTransform.localRotation = Quaternion.identity;
     }
     private void HandlePlayState()
     {
         rectTransform.localRotation = Quaternion.identity;
+        if(!Input.GetMouseButton(0)){
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit2D hit = Physics2D.Raycast(ray.origin, ray.direction);
+
+            if(hit.collider != null && hit.collider.GetComponent<GridCell>()){
+                GridCell cell = hit.collider.GetComponent<GridCell>();
+                int targetPosition = cell.gridIndex;
+                if(cell.isFull){
+                    //effect on mob
+                    handManager.DiscardCardTest(gameObject);
+                }
+            }
+        }
     }
 
     public void OnPointerEnter(PointerEventData eventData){

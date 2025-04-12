@@ -47,11 +47,11 @@ public class DeckManager : MonoBehaviour
         }
         
     }
-    public void DiscardCard(HandManager handManager){
+    public void DiscardCard(GameObject card){
         if(handManager.cardsInHand.Count == 0){
             return;
         } else {
-            handManager.DiscardCardTest();
+            handManager.DiscardCardTest(card);
         }
 
     }

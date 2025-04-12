@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7793405873847672512}
   - component: {fileID: 2506918265945930136}
   - component: {fileID: 2218075628661299540}
+  - component: {fileID: 5448356003556018366}
   m_Layer: 0
   m_Name: MonsterPrefab
-  m_TagString: Untagged
+  m_TagString: Monster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,6 +97,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb0cdc65ef5e13f4ebe5b102b3105955, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  monsterData: {fileID: 0}
+  currentHealth: 0
+  gridPosition: 0
+  monsterHealth: {fileID: 0}
+  monsterName: {fileID: 0}
+  monsterSprite: {fileID: 0}
+--- !u!114 &5448356003556018366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136129288780069052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0cdc65ef5e13f4ebe5b102b3105955, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  monsterData: {fileID: 11400000, guid: 66fd46b098f816c4fa2b8312bdc15051, type: 2}
+  currentHealth: 0
+  gridPosition: 0
+  monsterHealth: {fileID: 7701132681524505533}
+  monsterName: {fileID: 2670214763018782982}
+  monsterSprite: {fileID: 534133240260338858}
 --- !u!1 &5208968536446049977
 GameObject:
   m_ObjectHideFlags: 0

@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 4851284724482577443}
   m_Layer: 0
   m_Name: CardPrefab
-  m_TagString: Untagged
+  m_TagString: Card
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -451,7 +451,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectScale: 1.1
   glowEffect: {fileID: 2604628471315248303}
-  playArrow: {fileID: 4542214976314568975}
   lerpFactor: 0.5
 --- !u!1 &2448663611093277622
 GameObject:

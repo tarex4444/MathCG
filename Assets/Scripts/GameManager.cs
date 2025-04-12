@@ -1,4 +1,5 @@
 using System;
+using MainGameNamespace;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -22,7 +23,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
+    void Start(){
+    }
     private void InitializeManagers()
     {
         OptionsManager = GetComponentInChildren<OptionsManager>();

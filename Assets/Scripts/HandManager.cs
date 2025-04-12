@@ -42,11 +42,12 @@ public class HandManager : MonoBehaviour
         UpdateHandVisuals();
     }
 
-    public void DiscardCardTest(){
-        GameObject cardToRemove = cardsInHand[cardsInHand.Count-1];
-        
-        Destroy(cardToRemove);
-        cardsInHand.RemoveAt(cardsInHand.Count - 1);
+    public void DiscardCardTest(GameObject card){
+        Card cardDiscarded = card.GetComponent<Card>();
+        discardPile.AddToDiscardPile(cardDiscarded);
+
+        cardsInHand.Remove(card);
+        Destroy(card);
 
         UpdateHandVisuals();
     }

@@ -11,7 +11,7 @@ public class MonsterGridManager : MonoBehaviour
     List<GameObject> gridObjects = new List<GameObject>();
     public GameObject[] gridCells;
 
-    void Start(){
+    void Awake(){
         CreateGrid();
     }
 

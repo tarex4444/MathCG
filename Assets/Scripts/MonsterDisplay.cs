@@ -6,7 +6,7 @@ using UnityEngine;
 public class MonsterDisplay : MonoBehaviour
 {
     public Monster monsterData;
-    [HideInInspector] public int currentHealth;
+    [HideInInspector] public int currentHealth = 100;
     public TMP_Text monsterHealth;
     public TMP_Text monsterName;
     public SpriteRenderer monsterSprite;

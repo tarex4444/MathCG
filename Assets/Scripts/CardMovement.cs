@@ -2,6 +2,7 @@ using System;
 using System.Runtime.InteropServices;
 using MainGameNamespace;
 using Unity.VisualScripting;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -101,6 +102,7 @@ public class CardMovement : MonoBehaviour, IDragHandler, IPointerDownHandler, IP
                 }
             }
         }
+        TransitionToState0();
     }
 
     public void OnPointerEnter(PointerEventData eventData){

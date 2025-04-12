@@ -5,17 +5,13 @@ using UnityEngine;
 public class MonsterSpawner : MonoBehaviour
 {
     public MonsterGridManager monsterManager;
-    public Monster monsterData;
+    public Monster[] monstersData;
     public GameObject monsterPrefab;
-
-    private void Awake(){
-        monsterManager = FindAnyObjectByType<MonsterGridManager>();
-    }
 
     void Start(){
         GameObject monster = Instantiate(monsterPrefab, monsterManager.transform.position, Quaternion.identity, monsterManager.transform);
-        monster.GetComponent<MonsterDisplay>().monsterData = monsterData;
-        if(monsterManager.AddMonsterToGrid(monster, 2)){
+        monster.GetComponent<MonsterDisplay>().monsterData = monstersData[0];
+        if(monsterManager.AddMonsterToGrid(monster, 0)){
             return;
         }
     }

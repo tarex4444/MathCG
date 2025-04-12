@@ -202,7 +202,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   monsterManager: {fileID: 134100580}
-  monsterData: {fileID: 11400000, guid: 66fd46b098f816c4fa2b8312bdc15051, type: 2}
+  monstersData:
+  - {fileID: 11400000, guid: 66fd46b098f816c4fa2b8312bdc15051, type: 2}
   monsterPrefab: {fileID: 136129288780069052, guid: 38003ac9ead9f7a4f94c54e3ee67dbff, type: 3}
 --- !u!114 &134100580
 MonoBehaviour:
@@ -219,21 +220,25 @@ MonoBehaviour:
   gridCellPrefab: {fileID: 329242115805965744, guid: 0d890b67441a5eb47a140ddb0883d11b, type: 3}
   gridLength: 3
   gridCells: []
---- !u!4 &134100581
-Transform:
+--- !u!224 &134100581
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 134100578}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 3.8, y: -0}
+  m_SizeDelta: {x: 10, y: 5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &138441213 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6460643090247213646, guid: e6f2192cde56885448d9ffcb05e461ba, type: 3}
